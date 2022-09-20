@@ -13,3 +13,4 @@ console.log(objPersonagem.aliado)
 delete objPersonagem.aliado
 
 console.log(objPersonagem.aliado) //undefined
+console.log(objPersonagem)
