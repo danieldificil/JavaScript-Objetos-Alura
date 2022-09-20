@@ -10,17 +10,19 @@ const cliente ={
             parentesco: 'xxxxxx',
             idade: 4,
             cpf: '123123123123'
+        },
+        {
+            nome: 'Diana',
+            parentesco: 'xxxxxx',
+            idade: 1,
+            cpf: '12323123123'
         }
     ]
 }
-cliente.dependentes.push({
-    nome: 'Diana',
-    parentesco: 'xxxxxx',
-    idade: 1,
-    cpf: '12323123123'
-})
-
-console.log(cliente)
-
-const filhaMaisVelha = cliente.dependentes.filter((dependente) => dependente.idade > 1)
-console.log(filhaMaisVelha);
+cliente.saldo = 100
+cliente.depositar = function (valor){
+    this.saldo += valor
+}
+console.log(cliente.saldo);
+cliente.depositar(100)
+console.log(cliente.saldo);
