@@ -35,4 +35,3 @@ for (let info in cliente) {
     `
     }
 }
-console.log(relatorio);
